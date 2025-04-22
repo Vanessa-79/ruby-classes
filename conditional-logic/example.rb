@@ -132,3 +132,44 @@ puts 4.eql?(6)
 puts 1.equal?(1)
 puts 4.equal?(6)
 # this is used to check if two values are the same object in memory
+
+
+
+# .........Spaceship operator..........
+# The spaceship operator (<=>) is a way to compare two values
+# It returns -1 if the left value is less than the right value
+# It returns 0 if the left value is equal to the right value
+# It returns 1 if the left value is greater than the right value
+# for example
+puts 1 <=> 2 # -1
+puts 2 <=> 2 # 0
+puts 3 <=> 2 # 1
+# this is used to compare two values and return a value based on the comparison
+
+
+# ..........Logical operators..........
+# You can also use logical operators to combine multiple conditions
+# These are used when checking more than one condition:
+=begin
+&& or and → both conditions must be true
+|| or or → at least one condition must be true
+then lastly, ! → not (reverses the result)
+=end
+# for example
+if 1 < 2 && 5 < 6
+  puts "Awesome"
+end
+# In this example, the code will print "Awesome" because both conditions are true
+# for example
+if 1 < 2 || 5 > 6
+  puts "Great"
+end
+# In this example, the code will print "Great" because at least one condition is true
+# for example
+if !false  # true
+  puts "This is true"
+end
+if !(10 < 5)  # true
+  puts "This is true"
+end
+# In this example, the code will print "This is true" because the condition is true
