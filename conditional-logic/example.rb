@@ -173,3 +173,69 @@ if !(10 < 5)  # true
   puts "This is true"
 end
 # In this example, the code will print "This is true" because the condition is true
+
+
+
+# .........Case statements..........
+# A case statement is a way to check multiple conditions
+# It is similar to an if statement, but it is more concise
+# for example
+grade = 'F'
+
+did_i_pass = case grade
+  when 'A' then "Excellent work!"
+  when 'D' then "Tried."
+  else "'YOU SHALL NOT PASS!'"
+end
+puts did_i_pass
+# In this example, the code will print "'YOU SHALL NOT PASS!'" because the grade is not A or D
+
+
+# You can also use when to check multiple conditions
+# for example
+grade = 'F'
+
+case grade
+when 'A'
+  puts "You're amazing!"
+when 'B'
+  puts "Good job!"
+else
+  puts "Try again!"
+end
+# In this example, the code will print "Try again!" because the grade is not A or B
+
+
+
+# .......Unless statements.........
+# You can also use unless to check if a condition is false
+# An unless statement works in the opposite way as an if statement
+# it only processes the code in the block if the expression evaluates to false
+# e.g
+ age = 17
+unless age >= 18
+  puts "You are not old enough to vote"
+end
+# In this example, the code will print "You are not old enough to vote" because the age is not greater than or equal to 18
+
+# You can also use unless with else
+# for example
+age = 19
+unless age >= 18
+  puts "You are not old enough to vote"
+else
+  puts "You are old enough to vote"
+end
+# In this example, the code will print "You are old enough to vote" because the age is greater than or equal to 18
+# You can also use unless with elsif
+
+
+# .......Ternary operator.........
+# The ternary operator is a way to write a conditional statement in one line
+# It’s a short form of if...else in one line.
+# It is used to assign a value to a variable based on a condition
+# for example
+age = 17
+message = age >= 18 ? "You are old enough to vote" : "You are not old enough to vote"
+puts message
+# In this example, the code will print "You are not old enough to vote" because the age is not greater than or equal to 18
