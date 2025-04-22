@@ -64,3 +64,71 @@ else
   puts "May I help you please?"
 end 
 # this means that if the name is not Vanessa, the code will print "May I help you please?"
+
+
+# .......Using elsif:........
+# You can also use elsif to add more conditions to your if statement
+# for example
+name = "Claire"
+if name == "Vanessa"
+  puts "Hey Vanessa"
+elsif name == "Claire"
+  puts "Hi Claire, how is the project going?"
+else
+  puts "Who are you?"
+end
+# In this example, the code will print "Hi Claire, how is the project going?" because the name is Claire
+
+=begin
+Use if to check a condition.
+Use else to do something different if the condition is false.
+Use elsif for more than two options.
+You can write it all in one line if it's short.
+=end
+
+
+# .........Boolean Logic(Comparison operators)..........
+# You can also use boolean logic to combine multiple conditions
+# These are ways to compare things
+# The most common comparison operators are:
+# == (equal to) e.g 
+puts 1 == 1
+puts 4 == 6
+# this is used to check if two values are equal
+
+
+# this != (not equal to) e.g
+puts 1 != 1
+puts 4 != 6
+# this is used to check if two values are not equal
+
+# > (greater than) e.g
+puts 1 > 2
+puts 4 > 2
+# this is used to check if one value is greater than another
+
+# < (less than) e.g
+puts 1 < 2
+puts 4 < 2
+# this is used to check if one value is less than another
+
+# >= (greater than or equal to) e.g
+puts 1 >= 2
+puts 4 >= 2
+# this is used to check if one value is greater than or equal to another
+
+# <= (less than or equal to) e.g
+puts 1 <= 2
+puts 4 <= 2
+# this is used to check if one value is less than or equal to another
+
+
+# .eql? e.g
+puts 1.eql?(1)
+puts 4.eql?(6)
+# this is used to check if two values are equal and of the same type
+
+# .equal? e.g
+puts 1.equal?(1)
+puts 4.equal?(6)
+# this is used to check if two values are the same object in memory
