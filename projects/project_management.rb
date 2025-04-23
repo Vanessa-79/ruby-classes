@@ -17,9 +17,9 @@ project_name
 │   └── sort.rb
 └── main.rb
 
-# require_relative vs require:
+# .........require_relative vs require:............
 
-# require_relative
+# ............require_relative...........
 # require_relative is used to load files relative to the file that calls it. 
 # You're in the root of the project, the directory that holds main.rb
 
@@ -32,7 +32,7 @@ require_relative 'sort/merge_sort'
 
 
 
-# require
+# .........require...........
 # require is used for libraries that are outside your project (e.g., gems). It searches for files in directories listed in $LOAD_PATH, including installed gems and Ruby’s standard library. 
 
 
@@ -66,7 +66,7 @@ require_relative 'sort/merge_sort'
 
 # Bundler commands:
 
-# bundle init: Creates a Gemfile for managing dependencies.
+bundle init: #Creates a Gemfile for managing dependencies.
 # bundle add colorize: Adds the colorize gem to the Gemfile and installs it.
 
 # the Gemfile has information on where to get the gems from and what gems are required.
